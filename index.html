@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>El Sencillo Contador</title>
+        <!-- METADATOS -->
+        <meta
+            name="description"
+            content="Un contador de palabras sencillo pero con varias funciones!."
+        />
+        <meta
+            name="keywords"
+            content="contador de palabras, contador de caracteres, contador, palabras, caracteres, contador de texto, contador facil, contador sencillo"
+        />
+        <link rel="shortcut icon" href="img/icono.jpg" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="titulo-h1">
+                    <span class="span-el">El</span>
+                    <span class="span-sencillo">Sencillo</span>
+                    <span class="span-contador">Contador</span>
+                </h1>
+                <p class="titulo-p">
+                    <span class="span-el">El </span
+                    ><span class="span-contador">contador</span> de texto más
+                    <span class="span-sencillo">sencillo</span>
+                </p>
+                <div class="app">
+                    <div class="div-textarea">
+                        <textarea onkeyup="textareaEscribir()" id="textarea-id" class="textarea-escribir"></textarea>
+                    </div>
+                    <div class="botones">
+                        <button onclick="funcContar()" id="botonContar" class="boton-contar">Contar</button>
+                        <button onclick="funcReiniciar()" id="botonReiniciar" class="boton-reiniciar">Reiniciar</button>
+                    </div>
+                    <div id="contador-id" class="contador">
+                        <div id="contador-caracteres-id" class="contador-caracteres">
+                            <p>Contador de carácteres:</p>
+                            <p id="caracteres-calculados"></p>
+                        </div>
+                        <div id="contador-palabras-id" class="contador-palabras">
+                            <p>Contador de palabras:</p>
+                            <p id="palabras-calculadas"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <h3>
+                Creado con mucho ❤️ por
+                <a href="https://walter-taramasco.netlify.app/"
+                    >Walter Taramasco</a
+                >
+            </h3>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
